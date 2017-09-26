@@ -2,11 +2,12 @@ import sys
 
 x=sys.stdin.readlines()
 
-e=1
+f=1
 
 for s in x:
-	print(e,"\t",s)
-	e=e+1
+	print("# sent_id = ",f)
+	print("# text =",s)
+	f=f+1
 	s=s.replace(","," ,").replace("."," .")
 	t=s.split(" ")
 	z=1
