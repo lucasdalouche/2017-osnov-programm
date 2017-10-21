@@ -55,25 +55,23 @@ for line in lines:
 	tag_count[tag] = tag_count[tag] + 1
 	total=total+1
 
-print(tag_count)
-print("total of tagged tag_count = ", total)
+#print(tag_count)
+#print("total of tagged words = ", total)
 
-print("# P", "\t", "count", "\t", "tag", "\t", "form")
+print("# P\tcount\ttag\tform")
 
 for tag in tag_count:
 	freq=tag_count[tag]/total
 	print('%.2f' % (freq), "\t", tag_count[tag], "\t",tag, "\t", "_")
-
-print("\n")
 
 # for each of the words in the matrix
 for word in tag_word:
 	# for each of the tag
 	for tag in tag_word[word]:
 		freq = tag_word[word][tag]/form_count[word]
-		print('%.2f\t%d\t%s\t%s' % (freq, tag_word[word][tag], tag, word))
+
+	print('%.2f\t%d \t%s\t%s' % (freq, tag_word[word][tag], tag, word))
 
 		# %.2f = floating point number with 2 degrees of precision = 0.03
 		# %d = integer
 		# %s = string
-
