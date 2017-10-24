@@ -58,7 +58,7 @@ for line in lines:
 #print(tag_count)
 #print("total of tagged words = ", total)
 
-print("# P\tcount\ttag\tform")
+print('# P\tcount\ttag\tform')
 
 for tag in tag_count:
 	freq=tag_count[tag]/total
